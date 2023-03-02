@@ -1,0 +1,158 @@
+@import './libs/normolize.css';
+//@import './style/vars.scss';
+
+
+
+body {
+    background-color: white;
+    padding-top: 30px;
+    overflow: hidden;
+    color: gray;
+}
+.wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.canvas {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.containerForTime {
+    display: flex;
+    font: bold 15px/30px Arial;
+    padding: 0;
+    margin: 0;
+    .time {
+        padding: 0 10px 0 0;
+        margin: 0;
+        text-decoration: underline;
+    }
+    .hour {
+        padding: 0 10px 0 0;
+        margin: 0;
+    }
+}
+
+.containerForMove {
+    display: flex;
+    font: bold 15px/30px Arial;
+    padding: 0;
+    margin: 0;
+    .move {
+        padding: 0 10px 0 0;
+        margin: 0;
+        text-decoration: underline;
+    }
+    .moveClicks {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+.size {
+    font: bold 15px/30px Arial;
+    padding: 0 10px 0 0;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.button3, .button4, .button5, .button6, .button7, .button8 {
+    cursor: pointer;
+    background: white;
+    margin-right: 3px;
+    border: solid gray 1px;
+    border-radius: 3px;
+    color: gray;
+    &:hover {
+        background: rgba(127, 126, 126, .1);
+    }
+    &:active {
+        background: rgba(127, 126, 126, .5);
+    }
+}
+
+.containerForSaveAndSound {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.soundImg {
+    display: block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    &:hover {
+        background: rgba(127, 126, 126, .1);
+        border-radius: 50%;
+    }
+}
+
+.saveButton {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+    color: gray;
+    &:hover {
+        background: rgba(127, 126, 126, .1);
+    }
+    &:active {
+        background: rgba(127, 126, 126, .5);
+    }
+}
+
+.resultsButton {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+    color: gray;
+    &:hover {
+        background: rgba(127, 126, 126, .1);
+    }
+    &:active {
+        background: rgba(127, 126, 126, .5);
+    }
+}
+
+.resultsTable {
+    border: solid 1px gray;
+    width: 400px;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(198, 195, 195);
+    color: black;
+}
+
+td, th {
+    border: solid 1px gray;
+    text-align: center;
+}
+
+
+
+.active {
+    background-color: rgb(249, 216, 222);
+}
+
+.hidden {
+    display: none;
+}
