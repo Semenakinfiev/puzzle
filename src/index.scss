@@ -16,10 +16,12 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .container {
     display: inline-block;
     margin: 0 auto;
     position: relative;
+
 }
 
 .canvas {
@@ -30,7 +32,7 @@ body {
 
 .containerForTime {
     display: flex;
-    font: bold 15px/30px Arial;
+    font: bold 15px/25px Arial;
     padding: 0;
     margin: 0;
     .time {
@@ -46,7 +48,7 @@ body {
 
 .containerForMove {
     display: flex;
-    font: bold 15px/30px Arial;
+    font: bold 15px/25px Arial;
     padding: 0;
     margin: 0;
     .move {
@@ -62,7 +64,7 @@ body {
 
 
 .size {
-    font: bold 15px/30px Arial;
+    font: bold 15px/25px Arial;
     padding: 0 10px 0 0;
     margin: 0;
     text-decoration: underline;
@@ -83,11 +85,23 @@ body {
     }
 }
 
+.button4, .button5, .button6, .button7, .button8 {
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
+
+.button5, .button6, .button7, .button8 {
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
+
 .containerForSaveAndSound {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .soundImg {

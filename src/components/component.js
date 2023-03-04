@@ -20,11 +20,13 @@ function component(myGameArea, width, height, color, x, y, value) {//созда�
       ctx.fillStyle = color;
     }
     ctx.fillRect(this.x+1, this.y+1, this.width-2, this.height-2);
-    ctx.font = '30px serif';
+    ctx.font = '25px serif';
+    ctx.textBaseline = 'middle';
     ctx.textAlign = 'center';
     ctx.fillStyle = "gray";
-    ctx.fillText(value, (x+50), (y+55));
+    ctx.fillText(value, (x+width/2), (y+height/2));
   }
+
 }
 
 export default component;
